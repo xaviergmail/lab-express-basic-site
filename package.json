@@ -2,9 +2,10 @@
   "name": "lab-express-basic-site",
   "version": "1.0.0",
   "description": "![logo_ironhack_blue 7](https://user-images.githubusercontent.com/23629340/40541063-a07a0a8a-601a-11e8-91b5-2f13e4e6b441.png)",
-  "main": "app.js",
+  "main": "functions/app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node src/app.js",
+    "build": "netlify-lambda build src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^2.0.3"
   }
 }
