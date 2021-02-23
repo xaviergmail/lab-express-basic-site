@@ -1,5 +1,5 @@
 # example netlify.toml
 [build]
-  command = "npm install && npm build"
-  functions = "functions"
+  command = "npm install && npm run build"
+  functions = "dist/backend"
   publish = "public"
